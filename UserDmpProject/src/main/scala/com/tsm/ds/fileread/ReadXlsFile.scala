@@ -88,7 +88,7 @@ object `package` {
 
 object ReadXlsFile {
   def main(args:Array[String]) {
-    val dir = new File("/Users/stephenalba/Documents/study/bigdata/Data Sources");
+    val dir = new File(args(0));
     println("\nTraverse xls* and csv only");
     val extensions = List(".xls", ".csv", ".xlsx")
     val files = walkTree(dir)
