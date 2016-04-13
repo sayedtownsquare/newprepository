@@ -97,5 +97,6 @@ object ReadXlsFile {
       detectMime(f)
     }
     mime.foreach(convertToCsv)
+    println("done")
  }
 }
